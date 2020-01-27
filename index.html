@@ -219,19 +219,19 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-java基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/04/hello-world/">一、Java 概述</a>
+      <a class="article-title" href="/2019/09/04/java基础/">1.Java 基础：基础知识</a>
     </h1>
   
 
         
-        <a href="/2019/09/04/hello-world/" class="archive-article-date">
+        <a href="/2019/09/04/java基础/" class="archive-article-date">
   	<time datetime="2019-09-04T15:51:57.836Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
 </a>
         
@@ -239,36 +239,72 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-Java体系"><a href="#1-Java体系" class="headerlink" title="1. Java体系"></a>1. Java体系</h3><ul>
+        <h1 id="一、Java-概述"><a href="#一、Java-概述" class="headerlink" title="一、Java 概述"></a>一、Java 概述</h1><h2 id="1-Java体系"><a href="#1-Java体系" class="headerlink" title="1. Java体系"></a>1. Java体系</h2><ul>
 <li>java语言</li>
 <li>运行在各种平台上的虚拟机</li>
 <li>class字节码文件格式</li>
 <li>java api(jdk中提供的api)，类库</li>
 <li>商业的或者三方优秀开源类库</li>
 </ul>
-<h3 id="2-常用的DOS命令"><a href="#2-常用的DOS命令" class="headerlink" title="2. 常用的DOS命令"></a>2. 常用的DOS命令</h3><table>
+<h2 id="2-常用的DOS命令"><a href="#2-常用的DOS命令" class="headerlink" title="2. 常用的DOS命令"></a>2. 常用的DOS命令</h2><table>
 <thead>
 <tr>
-<th>表头</th>
-<th>表头</th>
-<th>表头</th>
+<th>DOS命令</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>内容</td>
-<td>内容</td>
-<td>内容</td>
+<td>cd</td>
+<td>退回上级目录</td>
+</tr>
+<tr>
+<td>cd\</td>
+<td>退回到根目录</td>
+</tr>
+<tr>
+<td>cd xx</td>
+<td>进入xx目录</td>
+</tr>
+<tr>
+<td>D:</td>
+<td>切换盘符</td>
+</tr>
+<tr>
+<td>cd d:\file</td>
+<td>进入D盘的file目录</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>列出当前目录下的文件和文件夹</td>
+</tr>
+<tr>
+<td>cls</td>
+<td>清屏</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>退出DOS</td>
+</tr>
+<tr>
+<td>md</td>
+<td>创建目录</td>
+</tr>
+<tr>
+<td>rd</td>
+<td>删除目录</td>
+</tr>
+<tr>
+<td>del</td>
+<td>删除文件</td>
+</tr>
+<tr>
+<td>ipconfig</td>
+<td>查看本机网络设置</td>
 </tr>
 </tbody></table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
 
-<p>第二行分割表头和内容。</p>
-<ul>
-<li>有一个就行，为了对齐，多加了几个<br>文字默认居左</li>
-<li>两边加：表示文字居中</li>
-<li>右边加：表示文字居右<br>注：原生的语法两边都要用 | 包起来。此处省略</li>
-</ul>
-<h3 id="3-JDK、JRE、Java平台"><a href="#3-JDK、JRE、Java平台" class="headerlink" title="3. JDK、JRE、Java平台"></a>3. JDK、JRE、Java平台</h3><ul>
+<h2 id="3-JDK、JRE、Java平台"><a href="#3-JDK、JRE、Java平台" class="headerlink" title="3. JDK、JRE、Java平台"></a>3. JDK、JRE、Java平台</h2><ul>
 <li><p><strong>JDK</strong>：它是Java开发运行环境，在程序员的电脑上当然要安装JDK；</p>
 <blockquote>
 <p>JDK = JRE + 开发工具集（例如Javac编译工具等）    </p>
@@ -296,85 +332,410 @@
 </ul>
 </li>
 </ul>
-<h3 id="4-Java代码的编写执行过程"><a href="#4-Java代码的编写执行过程" class="headerlink" title="4. Java代码的编写执行过程"></a>4. Java代码的编写执行过程</h3><ul>
+<h2 id="4-Java代码的编写执行过程"><a href="#4-Java代码的编写执行过程" class="headerlink" title="4. Java代码的编写执行过程"></a>4. Java代码的编写执行过程</h2><ul>
 <li><strong>源文件</strong>：编写Java源文件（我们也称之为源代码文件），它的扩展名为.java；</li>
-<li><strong>编译</strong>：然后通过编译器把源文件编译成字节码文件，字节码文件扩展名为.class；<br>  为什么要编译?JAVA程序是由虚拟机运行的，我们所写的代码虚拟机不认识，我们要把自己写的代码翻译成虚拟机所认识的语言<br>运行：最后使用解释器来运行字节码文件。</li>
+<li><strong>编译</strong>：然后通过编译器把源文件编译成字节码文件，字节码文件扩展名为.class；<br>为什么要编译?JAVA程序是由虚拟机运行的，我们所写的代码虚拟机不认识，我们要把自己写的代码翻译成虚拟机所认识的语言</li>
+<li><strong>运行</strong>：最后使用解释器来运行字节码文件。</li>
 </ul>
-<p>Java代码的编写执行过程</p>
-<ol start="5">
-<li>注释<br>定义：用来解释和说明程序的文字，注释是不会被执行的<br>分类：<br>单行注释： //注释内容<br>多行注释： /<em>注释内容</em>/<br>文档注释： /<em>*注释内容</em>/<br>注意：<br>对于单行和多行注释，被注释的文字，不会被JVM解释执行<br>对于文档注释，可以被JDK提供的工具 javadoc 所解析，生成一套以网页文件形式体现的该程序的说明文档<br>单行注释可以嵌套使用，多行注释不能嵌套使用</li>
-<li>关键字、标识符<br>关键字<br>定义：是被Java语言赋予特殊含义，具有专门用途的单词，比如之前接触的class，int，double均为Java已经预设好的<br>特点：字母全部小写, 注意String不是关键字<br>注意事项：goto 与 const 是Java中的保留字，即没有赋予特殊含义却仍被Java占用的单词<br>标识符<br>定义：就是给类,接口,方法,变量等起名字时使用的字符序列<br>组成规则(只能包含下面的内容,不能有其它内容):<br>英文大小写字母<br>数字字符<br>$和_<br>注意事项:<br>数字不能开头<br>不可以使用关键字<br>严格区分大小写，不限制长度<br>起名时，尽量达到见名知意<br>标识符中常见的命名规则(这些规定是不受语法约束的):<br>包名：多单词组成时所有字母均小写，使用.连接,域名反写 aaa.bbb.ccc<br>类名&amp;接口名：大驼峰式 Aaa AaaBbbCcc<br>变量名&amp;方法名：小驼峰式 aaa aaaBbbCcc<br>常量名：多单词组成是所有字母均大写，使用_连接 AAA_BBB_CCC</li>
-<li>Java中的数据类型<br>为什么有数据类型?<br>Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型<br>Java中数据类型的分类<br>基本数据类型： 基本数据类型是Java语言中内置的类型，分别是整数类型、小数类型、字符类型、布尔类型。这四类基本类型是最简单、最基础的类型。<br>引用数据类型： 是强大的数据类型，它是基于基本数据类型创建的。<br>JavaSE中提供了一个超级类库，类库中包含了近万种引用数据类型。<br>基本类型：类 接口 数组 枚举</li>
-<li>Java中的常量<br>定义：常量就是不变的数据量, 在程序执行的过程中其值不可以发生改变<br>整形常量默认是 int类型<br>在Java中，定义长整形数据如果值超过int取值范围后面要+L，否则是错误的<br>小数常量默认是 double类型<br>D后缀为double，F后缀为float<br>定义float类型的数据后面要 + f ,否则默认是double<br>常量分类：<br>整数类型<br>十进制表示方式：正常数字。 如 13、25等<br>二进制表示方式：以 0b(0B) 开头。 如0b1011 、0B1001<br>十六进制表示方式：以 0x(0X) 开头。 数字以0-9及A-F组成 如0x23A2、0xa、0x10<br>八进制表示方式：以 0 开头。 如01、07、0721<br>小数类型：如1.0、-3.15、3.168等<br>布尔类型：true、false ,注意严格区分大小写<br>字符类型:<br>如 ‘a’，’A’, ‘0’, ‘家’<br>字符必须使用 ‘’ 包裹，并且其中只能且仅能包含一个字符<br>字符串类型:<br>字符串String类型是一种引用类型，我们先了解作为常量类型的使用方式<br>如 “我爱Java”，”0123”，””，”null”<br>字符串必须使用 “” 包裹，任意长度<br>在计算机内，有符号数有3种表示法：原码、反码和补码。所有数据的运算都是采用 补码 进行的<br>原码： +8: 0 000 1000 -8: 1 000 1000<br>就是二进制定点表示法，即最高位为符号位，0表示正，1表示负，其余位表示数值的大小。<br>反码： +8: 0 000 1000 -8: 1111 0111<br>正数的反码与其原码相同；负数的反码是对其原码逐位取反，但符号位除外。<br>补码： +8: 0 000 1000 -8: 1111 1000<br>正数的补码与其原码相同；负数的补码是在其反码的末位加 1<br>二、变量和运算符</li>
-<li>变量和计算机存储单元</li>
-</ol>
-<p>变量是内存中装载数据的小盒子，你只能用它来存数据和取数据<br>变量名是标识符，这说明只要是合法的标识符都可以用来做变量名。<br>变量使用的注意事项<br>变量定义后可以不赋值，使用时再赋值。不赋值不能使用<br>变量使用时有作用域的限制。(局部变量和全局变量)<br>变量不可以重复定义<br>计算机存储单元<br>计算机中储存和运算的最小单位：一个字节，也就是1个字节（byte）<br>常用储存单位1B（字节） = 8bit（比特位）<br>1KB = 1024B<br>1MB = 1024KB<br>1GB = 1024MB<br>1TB = 1024GB<br>1PB = 1024TB</p>
-<ol start="2">
-<li>数据类型和常量</li>
-</ol>
-<p>四类八种<br>byte： 1个字节 ： -128～127 (数据表示范围)<br>short： 2个字节： -32768～32767<br>int： 4个字节： -2147483648～2147483648<br>long： 8个字节： -2^63～2^63-1<br>float： 4个字节： -3.403E38～3.403E38<br>double： 8个字节： -1.798E308～1.798E308<br>char： 2个字节： 表示一个字符，如(‘a’，’A’，’0’，’家’)<br>boolean： 1个字节： 只有两个值true与false<br>变量必须要有明确的类型，什么类型的变量装载什么类型的数据<br>数据类型范围从小到大排序：<br>byte &lt; char &lt; short &lt; int &lt; long &lt; float &lt; double,<br>布尔类型boolean不能参与类型转换</p>
-<ol start="3">
-<li>数据类型转换</li>
-</ol>
-<p>自动类型转换：表示范围小的数据类型转换成范围大的数据类型，这种方式称为自动类型转换<br>自动类型转换格式：范围大的数据类型 变量 = 范围小的数据类型值;<br>默认转换：byte、short、char —&gt; int —&gt; long —&gt; float —&gt; double<br>byte、short、char 相互之间不转换，他们参与运算首先转换为 int类型<br>强制类型转换：表示范围大的数据类型转换成范围小的数据类型，这种方式称为强制类型转换<br>强制类型转换格式：范围小的数据类型 变量 = (范围小的数据类型) 范围大的数据类型值;</p>
-<ol start="4">
-<li>运算符 和 优先级</li>
-</ol>
-<p>算数运算符</p>
+<h2 id="5-注释"><a href="#5-注释" class="headerlink" title="5. 注释"></a>5. 注释</h2><ul>
+<li><strong>定义</strong>：用来解释和说明程序的文字，注释是不会被执行的</li>
+<li><strong>分类</strong>：<ul>
+<li><strong>单行注释</strong>： //注释内容</li>
+<li><strong>多行注释</strong>： /<em>注释内容</em>/</li>
+<li><strong>文档注释</strong>： /<em>*注释内容</em>/</li>
+</ul>
+</li>
+<li><strong>注意</strong>：<ul>
+<li>对于单行和多行注释，被注释的文字，不会被JVM解释执行</li>
+<li>对于文档注释，可以被JDK提供的工具 javadoc 所解析，生成一套以网页文件形式体现的该程序的说明文档</li>
+<li>单行注释可以嵌套使用，多行注释不能嵌套使用</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-关键字、标识符"><a href="#6-关键字、标识符" class="headerlink" title="6. 关键字、标识符"></a>6. 关键字、标识符</h2><ul>
+<li><strong>关键字</strong><ul>
+<li><strong>定义</strong>：是被Java语言赋予特殊含义，具有专门用途的单词，比如之前接触的class，int，double均为Java已经预设好的</li>
+<li><strong>特点</strong>：字母全部小写, 注意String不是关键字</li>
+<li><strong>注意事项</strong>：goto 与 const 是Java中的保留字，即没有赋予特殊含义却仍被Java占用的单词</li>
+</ul>
+</li>
+<li><strong>标识符</strong><ul>
+<li><strong>定义</strong>：就是给类,接口,方法,变量等起名字时使用的字符序列</li>
+<li><strong>组成规则</strong>(只能包含下面的内容,不能有其它内容):<ul>
+<li>英文大小写字母</li>
+<li>数字字符</li>
+<li>$和_</li>
+</ul>
+</li>
+<li><strong>注意事项</strong>:<ul>
+<li>数字不能开头</li>
+<li>不可以使用关键字</li>
+<li>严格区分大小写，不限制长度</li>
+<li>起名时，尽量达到见名知意</li>
+</ul>
+</li>
+<li><strong>标识符中常见的命名规则</strong>(这些规定是不受语法约束的):<ul>
+<li><strong>包名</strong>：多单词组成时所有字母均小写，使用.连接,域名反写 aaa.bbb.ccc</li>
+<li><strong>类名&amp;接口名</strong>：大驼峰式 Aaa AaaBbbCcc</li>
+<li><strong>变量名&amp;方法名</strong>：小驼峰式 aaa aaaBbbCcc</li>
+<li><strong>常量名</strong>：多单词组成是所有字母均大写，使用_连接 AAA_BBB_CCC</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-Java中的数据类型"><a href="#7-Java中的数据类型" class="headerlink" title="7. Java中的数据类型"></a>7. Java中的数据类型</h2><blockquote>
+<p><strong>为什么有数据类型?</strong><br>Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型</p>
+</blockquote>
 <ul>
-<li><ul>
-<li><ul>
-<li>/ % ++ –</li>
+<li>Java中数据类型的分类<ul>
+<li><strong>基本数据类型</strong>： 基本数据类型是Java语言中内置的类型，分别是整数类型、小数类型、字符类型、布尔类型。这四类基本类型是最简单、最基础的类型。</li>
+<li><strong>引用数据类型</strong>： 是强大的数据类型，它是基于基本数据类型创建的。<ul>
+<li>JavaSE中提供了一个超级类库，类库中包含了近万种引用数据类型。</li>
+<li><strong>基本类型</strong>：类 接口 数组 枚举</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<p>+： 正号、加、连接字符串<br>++，–运算符后置时，先使用变量a原有值参与运算操作，运算操作完成后，变量a的值自增1或者自减1；<br>++，–运算符前置时，先将变量a的值自增1或者自减1，然后使用更新后的新值参与运算操作。<br>注意事项：<br>加法运算符在连接字符串时要注意，只有直接与字符串相加才会转成字符串。<br>除法当两边为整数时，取整数部分，舍余数。当其中一边为浮点型时，按正常规则相除。<br>% 为整除取余符号，小数取余没有意义。结果符号与被取余符号相同。<br>整数做被除数，0不能做除数，否则报错。<br>小数做被除数，整除 0 结果为 Infinity，对 0 取模结果为 NaN<br>赋值运算符</p>
-<p>+= -= *= /= %=</p>
-<p>+=, -=, *=, /=这样的赋值运算符包含了一个 强制转换 的操作，会将左右两边运算后的结果，强制类型转换后赋值给左边<br>注意：赋值运算符左边必须是变量<br>int n = 10;<br>byte by = 20;<br>by += n; // 运算完毕后，by的值为byte类型30， 相当于代码 by = (byte)(by + n);<br>比较运算符</p>
-<p>== != &lt; &gt; &lt;= &gt;=</p>
-<p>结果只能是true 和 false<br>字符间的比较，比较的是其 ASCII 值<br>浮点数 与 整数 比较，只要值相等，就返回 true<br>逻辑运算符</p>
-<p>&amp;与—–false&amp;true—–False<br>|或—–false|true—–True<br>^异或—–true^flase—–True<br>!非—–!true—–Flase<br>&amp;&amp;短路与—–false&amp;&amp;true—–False<br>||短路或—–false||true—–True<br>&amp;&amp; : 又叫短路运算符，A&amp;&amp;B，如果A为假，不会去计算B的值，直接得到结果为 false<br>&amp; : A &amp; B，即使A为假，也会计算B的值。<br>|| : 也是短路运算符，A || B，如果A为真，不会去计算B的值，直接得到结果为 true<br>| : A | B，即使A为真，也会计算 B 的值。<br>异或^ : 左右两边条件结果相同，结果就为false，左右两边条件结果不同，结果就为true；<br>三目运算符</p>
-<p>语法：布尔表达式 ? 表达式1 : 表达式2<br>当布尔表达式的值为true，则返回表达式1的值，否则返回表达式2的值<br>运算符优先级</p>
-<p>优先级 描述 运算符<br>1 括号 ()、[]<br>2 正负号 +、-<br>3 自增自减，非 ++、–、!<br>4 乘除，取余 <em>、/、%<br>5 加减 +、-<br>6 移位运算 &lt;&lt;、&gt;&gt;、&gt;&gt;&gt;<br>7 大小关系 &gt;、&gt;=、&lt;、&lt;=<br>8 相等关系 ==、!=<br>9 按位与 &amp;<br>10 按位异或 ^<br>11 按位或 |<br>12 逻辑与 &amp;&amp;<br>13 逻辑或 ||<br>14 条件运算 ?:<br>15 赋值运算 =、+=、-=、</em>=、/=、%=<br>16 位赋值运算 &amp;=、|=、&lt;&lt;=、&gt;&gt;=、&gt;&gt;&gt;=</p>
-<p>位运算符</p>
-<p>位运算符<br>位运算是直接对 二进制 进行运算<br>在位运算中，操作数必须是 整型<br>位异或运算符的特点：<br>一个数据对另一个数据位异或两次，该数本身不变。<br>任何数和自身异或，结果为0<br>任何数和0异或，结果为本身<br>&lt;&lt; 左移一位，相当于乘以2： 3 &lt;&lt; 2 = 12 –&gt; 322=12</p>
+<h2 id="8-Java中的常量"><a href="#8-Java中的常量" class="headerlink" title="8. Java中的常量"></a>8. Java中的常量</h2><ul>
+<li><p><strong>定义</strong>：常量就是不变的数据量, 在程序执行的过程中其值不可以发生改变</p>
+</li>
+<li><p>整形常量默认是 <strong>int类型</strong></p>
 <blockquote>
+<p>在Java中，定义长整形数据如果值超过int取值范围后面要+L，否则是错误的</p>
+</blockquote>
+</li>
+<li><p>小数常量默认是 <strong>double类型</strong></p>
 <blockquote>
-<p>右移一位，相当于除以2： 3 &gt;&gt; 1 = 1 –&gt; 3/2=1<br>3 &gt;&gt;&gt; 1 = 1 –&gt; 3/2=1<br>同样的运算，位运算的效率高于算术运算<br>三、引用数据类型、流程控制语句 和 数组</p>
-<ol>
-<li>引用数据类型<br>引用数据类型的变量定义及赋值格式：数据类型 变量名 = new 数据类型();<br>调用该类型实例的功能：变量名.方法名();<br>Scanner类：<br>导包：import java.util.Scanner;<br>创建对象实例：Scanner sc = new Scanner(System.in);<br>调用方法：<br>int  i = sc.nextInt(); //用来接收控制台录入的数字<br>String s = sc.next(); //用来接收控制台录入的字符串<br>随机数类Random<br>方法简介<br>public int nextInt(int maxValue)    //产生 [0,maxValue) 范围的随机整数，包含0，不包含maxValue；<br>public double nextDouble()          //产生 [0,1) 范围的随机小数，包含0.0，不包含1.0。<br>Random使用方式:</li>
-</ol>
+<p>D后缀为double，F后缀为float<br>定义float类型的数据后面要 + f ,否则默认是double</p>
 </blockquote>
+</li>
+<li><p><strong>常量分类</strong>：</p>
+<ul>
+<li><strong>整数类型</strong><ul>
+<li>十进制表示方式：正常数字。 如 13、25等</li>
+<li>二进制表示方式：以 0b(0B) 开头。 如0b1011 、0B1001</li>
+<li>十六进制表示方式：以 0x(0X) 开头。 数字以0-9及A-F组成 如0x23A2、0xa、0x10</li>
+<li>八进制表示方式：以 0 开头。 如01、07、0721</li>
+</ul>
+</li>
+<li><strong>小数类型</strong>：如1.0、-3.15、3.168等</li>
+<li><strong>布尔类型</strong>：true、false ,注意严格区分大小写</li>
+<li><strong>字符类型</strong>:<ul>
+<li>如 ‘a’，’A’, ‘0’, ‘家’</li>
+<li>字符必须使用 ‘’ 包裹，并且其中只能且仅能包含一个字符</li>
+</ul>
+</li>
+<li><strong>字符串类型</strong>:<ul>
+<li>字符串String类型是一种引用类型，我们先了解作为常量类型的使用方式</li>
+<li>如 “我爱Java”，”0123”，””，”null”</li>
+<li>字符串必须使用 “” 包裹，任意长度</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在计算机内，有符号数有3种表示法：<strong>原码、反码和补码</strong>。所有数据的运算都是采用<strong>补码</strong>进行的.</p>
+<ul>
+<li><strong>原码</strong>： +8: 0 000 1000 -8: 1 000 1000<blockquote>
+<p>就是二进制定点表示法，即最高位为符号位，0表示正，1表示负，其余位表示数值的大小。</p>
 </blockquote>
-<p>import导包：import java.util.Random<br>创建实例格式：Random 变量名 = new Random();<br>赋值：a = 变量名.nextInt(maxValue);</p>
-<ol start="2">
-<li>流程控制语句</li>
-<li>if</li>
-<li>if…else…</li>
-<li>if…else if…else…</li>
-<li>while</li>
-<li>for</li>
-<li>do…while…</li>
-<li>switch case default break<br>//case 穿透性：如果多个case条件后面的执行语句是一样的，则该执行语句只需书写一次即可，这是一种简写的方式<br>break语句<br>作用：跳出所在的循环体<br>使用方式<br>无法单独使用，必须将break关键字置于 switch 或 循环语句 中<br>运行规律<br>不需要判断任何条件，只要遇到break变直接跳出执行后续代码。会完全跳出选择或者循环结构<br>只能跳出 最近的 代码块，不能跨越多级代码块<br>标记<br>当break语句出现在嵌套循环中的内层循环时，它只能跳出内层循环，如果想使用break语句跳出外层循环则需要对外层循环添加标记<br>使用方式：在外层循环外的某行前边使用，后边跟有冒号:的标识符，即定义完毕。<br>使用时当在内层循环使用 break 或 continue 时后边紧跟之前定义的标号即可<br>itcast: for (i = 1; i &lt;= 9; i++) { // 外层循环,itcast是标记<br> for (j = 1; j &lt;= i; j++) { // 内层循环<pre><code>if (i &gt; 4) { // 判断i的值是否大于4
-break itcast; // 跳出外层循环</code></pre> }<br>}<br>continue语句<br>作用：提前结束本次循环，继续进行下次循环<br>使用方式: 无法单独使用，必须将continue关键字置于 循环语句 中<br>运行规律: 不需要判断任何条件，只要遇到continue变直接跳出本轮循环进行下次循环<br>return 、break、continue 跳出控制语句的区别<br>break：结束当前整个循环，执行当前循环下边的语句。<br>continue：结束本次循环，继续进行下次循环<br>return： 用于结束一个方法，返回给上层调用者，如果位于main方法内，相当于结束了程序。<br>return也可以用于结束循环，因为return用于结束一个方法，如果方法中有循环的话，不管return嵌套于多少层循环之内，循环都结束。<br>不会再执行循环后面的语句</li>
-</ol>
-<ol start="3">
-<li>数组<br>一维数组<br>概述：长度不可变、元素类型相同<br>一组数据的集合，数组中的每个数据被称作’元素’<br>在数组中可以存放’任意类型’的元素<br>但’同一个数组’里存放的元素类型必须一致。<br>数组是’恒定, 定长的<br>数组的定义1<br>格式: 数据类型[] 数组名 = new 数据类型[长度]; int[] x = new int[100];<br>使用属性：数组名.length<br>数组的最小索引是 0, 最大索引是 数组.length-1<br>数组的定义2<br>数组初始化：在定义数组时只指定数组的长度，由系统自动为元素 赋初值 的方式称作动态初始化。<br>格式:<br>数据类型[] 数组名 = new 类型[长度]; int[] arr = new int[4];<br>类型[] 数组名 = new 类型[]{元素，元素，……}; int[] arr = new int[]{1,2,3,4};<br>类型[] 数组名 = {元素，元素，元素，……}; int[] arr = { 1, 2, 3, 4 };<br>JVM内存划分<br>寄存器：内存和CUP之间<br>本地方法栈： JVM调用了系统中的功能<br>方法和数据共享： 运行时期class文件进入的地方<br>方法栈：所有的方法运行的时候进入内存<br>堆：存储的是容器和对象<br>数组中常见的异常<br>数组的索引越界异常<br>空指针异常<br>二维数组<br>定义格式</li>
-</ol>
-<p>四、方法</p>
-<ol>
-<li>引入<br>为什么要有方法：提高代码的复用性<br>什么是方法：完成特定功能的代码块</li>
-<li>语法格式<br>访问修饰符：方法允许被访问的权限范围。( public，protected，private，无修饰符 )<br>返回类型：void、任何数据类型<br>方法名：同变量名规则。小写；多个单词，第一个单词首字母小写，其余首字母大写 。myMethod<br>参数列表：可以省略。参数类型 + 参数名，…</li>
-<li>方法调用<br>可以使用 对象名 调用方法，静态方法是使用 类名 调用的<br>方法包括在类中,调用时先创建包含方法的类的对象，然后用对象再去调用方法。<br>创建对象：类名 对象名 = new 类名();<br>调用：对象名.方法名();</li>
-<li>注意事项<br>方法参数是 基本类型 ，传递的是值。（包含String类型），形式参数的改变对实际参数不影响<br>方法参数是 引用类型，传递的是内存地址值。（String类型除外），形式参数的改变对实际参数有影响<br>方法的定义只能放在类里面，不能嵌套定义。故而不能在主方法内直接定义方法<br>方法返回值是void，方法中可以省略return<br>方法一般在主方法的前面定义<br>调用方法的时候，返回值是void, 不能写在输出语句中</li>
-<li>方法重载<br>方法的重载：在同一个类中，方法名相同，参数列表不同。与返回值类型无关。<br>参数列表不同：<br>参数个数不同<br>参数类型不同<br>参数的顺序不同(算重载,但是在开发中不用)，注意：必须是不同数据类型。相同类型不存在顺序不同<br>方法重载注意事项<br>重载和参数变量名无关<br>重载和返回值类型无关如void method(int x)与int method(int y)不是方法重载，不能同时存在<br>重载和修饰符无关<br>重载看 方法名 和 参数列表</li>
-<li>可变参数列表<br>例：public void sum(int… n){}<br>参数列表中如果有两个以上的参数，可变参数一定在最后<br>可以将数组传递给可变参数列表<br>数组作为参数时，不能将多个值传递给数组的<br>一个方法的形式参数列表，只能有一个可变参数列表<br>方法名相同，一个参数是可变参数，一个参数是一维数组，这两个方法不是重载，因为 一个可变参数等价于相应类型的一维数组<br>就可以对可变参数列表，进行相应的数组操作，比如求长度<br>可变参数列表所在的方法，是最后被执行访问的<br>方法重载的时候，既可以定义有可变参数的同名方法，也可以定义有确定参数个数的方法，jvm调用方法时，会优先调用 有确定参数个数 的方法<br><a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</li>
-</ol>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>反码： +8: 0 000 1000 -8: 1111 0111</p>
+<blockquote>
+<p>正数的反码与其原码相同；负数的反码是对其原码逐位取反，但符号位除外。</p>
+</blockquote>
+</li>
+<li><p>补码： +8: 0 000 1000 -8: 1111 1000</p>
+<blockquote>
+<p>正数的补码与其原码相同；负数的补码是在其反码的末位加 1</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="二、变量和运算符"><a href="#二、变量和运算符" class="headerlink" title="二、变量和运算符"></a>二、变量和运算符</h1><h2 id="1-变量和计算机存储单元"><a href="#1-变量和计算机存储单元" class="headerlink" title="1. 变量和计算机存储单元"></a>1. 变量和计算机存储单元</h2><blockquote>
+<p>变量是内存中装载数据的小盒子，你只能用它来存数据和取数据<br>变量名是标识符，这说明只要是合法的标识符都可以用来做变量名。</p>
+</blockquote>
+<ul>
+<li><strong>变量使用的注意事项</strong><ul>
+<li>变量定义后可以不赋值，使用时再赋值。不赋值不能使用</li>
+<li>变量使用时有作用域的限制。(局部变量和全局变量)</li>
+<li>变量不可以重复定义</li>
+</ul>
+</li>
+<li><strong>计算机存储单元</strong><ul>
+<li>计算机中储存和运算的最小单位：一个字节，也就是1个字节（byte）</li>
+<li><strong>常用储存单位1B</strong>（字节） = 8bit（比特位）<blockquote>
+<p>1KB = 1024B<br>1MB = 1024KB<br>1GB = 1024MB<br>1TB = 1024GB<br>1PB = 1024TB</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-数据类型和常量"><a href="#2-数据类型和常量" class="headerlink" title="2. 数据类型和常量"></a>2. 数据类型和常量</h2><ul>
+<li><p><strong>四类八种</strong></p>
+<blockquote>
+<p>byte： 1个字节 ： -128～127 (数据表示范围)<br>short： 2个字节： -32768～32767<br>int： 4个字节： -2147483648～2147483648<br>long： 8个字节： -2^63～2^63-1<br>float： 4个字节： -3.403E38～3.403E38<br>double： 8个字节： -1.798E308～1.798E308<br>char： 2个字节： 表示一个字符，如(‘a’，’A’，’0’，’家’)<br>boolean： 1个字节： 只有两个值true与false</p>
+</blockquote>
+</li>
+<li><p>变量必须要有明确的类型，什么类型的变量装载什么类型的数据</p>
+</li>
+<li><p>数据类型范围从小到大排序：</p>
+<blockquote>
+<p>byte &lt; char &lt; short &lt; int &lt; long &lt; float &lt; double,<br>布尔类型boolean不能参与类型转换</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="3-数据类型转换"><a href="#3-数据类型转换" class="headerlink" title="3. 数据类型转换"></a>3. 数据类型转换</h2><ul>
+<li><strong>自动类型转换</strong>：表示范围小的数据类型转换成范围大的数据类型，这种方式称为自动类型转换</li>
+<li><em>自动类型转换格式*</em>：范围大的数据类型 变量 = 范围小的数据类型值;<blockquote>
+<p>默认转换：byte、short、char —&gt; int —&gt; long —&gt; float —&gt; double<br>byte、short、char 相互之间不转换，他们参与运算首先转换为 int类型</p>
+</blockquote>
+</li>
+<li><strong>强制类型转换</strong>：表示范围大的数据类型转换成范围小的数据类型，这种方式称为强制类型转换<blockquote>
+<p><strong>强制类型转换格式</strong>：范围小的数据类型 变量 = (范围小的数据类型) 范围大的数据类型值;</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="4-运算符-和-优先级"><a href="#4-运算符-和-优先级" class="headerlink" title="4. 运算符 和 优先级"></a>4. 运算符 和 优先级</h2><p><strong>算数运算符</strong></p>
+<p><strong>+ - * / % ++ –</strong></p>
+<blockquote>
+<p>+： 正号、加、连接字符串<br>++，–运算符后置时，先使用变量a原有值参与运算操作，运算操作完成后，变量a的值自增1或者自减1；<br>++，–运算符前置时，先将变量a的值自增1或者自减1，然后使用更新后的新值参与运算操作。</p>
+</blockquote>
+<ul>
+<li>注意事项：<ul>
+<li>加法运算符在连接字符串时要注意，只有直接与字符串相加才会转成字符串。</li>
+<li>除法当两边为整数时，取整数部分，舍余数。当其中一边为浮点型时，按正常规则相除。</li>
+<li>% 为整除取余符号，小数取余没有意义。结果符号与被取余符号相同。</li>
+<li>整数做被除数，0不能做除数，否则报错。</li>
+<li>小数做被除数，整除 0 结果为 Infinity，对 0 取模结果为 NaN</li>
+</ul>
+</li>
+</ul>
+<p><strong>赋值运算符</strong></p>
+<p><strong>+= -= *= /= %=</strong></p>
+<ul>
+<li>+=, -=, *=, /=这样的赋值运算符包含了一个 强制转换 的操作，会将左右两边运算后的结果，强制类型转换后赋值给左边</li>
+<li>注意：赋值运算符左边必须是变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int n = 10;</span><br><span class="line">byte by = 20;</span><br><span class="line">by += n; // 运算完毕后，by的值为byte类型30， 相当于代码 by = (byte)(by + n);</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+</li>
+</ul>
+<p><strong>比较运算符</strong></p>
+<p><strong>== != &lt; &gt; &lt;= &gt;=</strong></p>
+<ul>
+<li>结果只能是true 和 false</li>
+<li>字符间的比较，比较的是其 ASCII 值</li>
+<li>浮点数 与 整数 比较，只要值相等，就返回 true</li>
+</ul>
+<p><strong>逻辑运算符</strong></p>
+<blockquote>
+<p>&amp;与—–false&amp;true—–False<br>|或—–false|true—–True<br>^异或—–true^flase—–True<br>!非—–!true—–Flase<br>&amp;&amp;短路与—–false&amp;&amp;true—–False<br>||短路或—–false||true—–True</p>
+</blockquote>
+<ul>
+<li>*<em>&amp;&amp; *</em>: 又叫短路运算符，A&amp;&amp;B，如果A为假，不会去计算B的值，直接得到结果为 false</li>
+<li><em>&amp;*</em> : A &amp; B，即使A为假，也会计算B的值。</li>
+<li>*<em>|| *</em>: 也是短路运算符，A || B，如果A为真，不会去计算B的值，直接得到结果为 true</li>
+<li><em>|*</em> : A | B，即使A为真，也会计算 B 的值。</li>
+<li><strong>异或</strong>^ : 左右两边条件结果相同，结果就为false，左右两边条件结果不同，结果就为true；</li>
+</ul>
+<p><strong>三目运算符</strong></p>
+<ul>
+<li>语法：布尔表达式 ? 表达式1 : 表达式2</li>
+<li>当布尔表达式的值为true，则返回表达式1的值，否则返回表达式2的值</li>
+</ul>
+<p><strong>运算符优先级</strong></p>
+<blockquote>
+<p>优先级 描述 运算符<br>1 括号 ()、[]<br>2 正负号 +、-<br>3 自增自减，非 ++、–、!<br>4 乘除，取余 <em>、/、%<br>5 加减 +、-<br>6 移位运算 &lt;&lt;、&gt;&gt;、&gt;&gt;&gt;<br>7 大小关系 &gt;、&gt;=、&lt;、&lt;=<br>8 相等关系 ==、!=<br>9 按位与 &amp;<br>10 按位异或 ^<br>11 按位或 |<br>12 逻辑与 &amp;&amp;<br>13 逻辑或 ||<br>14 条件运算 ?:<br>15 赋值运算 =、+=、-=、</em>=、/=、%=<br>16 位赋值运算 &amp;=、|=、&lt;&lt;=、&gt;&gt;=、&gt;&gt;&gt;=</p>
+</blockquote>
+<p><strong>位运算符</strong><br>图片</p>
+<ul>
+<li>位运算是直接对 二进制 进行运算</li>
+<li>在位运算中，操作数必须是 整型</li>
+<li><strong>位异或运算符的特点：</strong><ul>
+<li>一个数据对另一个数据位异或两次，该数本身不变。</li>
+<li>任何数和自身异或，结果为0</li>
+<li>任何数和0异或，结果为本身</li>
+<li>&lt;&lt; 左移一位，相当于乘以2： 3 &lt;&lt; 2 = 12 –&gt; 322=12</li>
+<li><blockquote>
+<blockquote>
+<p>右移一位，相当于除以2： 3 &gt;&gt; 1 = 1 –&gt; 3/2=1</p>
+</blockquote>
+</blockquote>
+</li>
+<li>3 &gt;&gt;&gt; 1 = 1 –&gt; 3/2=1</li>
+</ul>
+</li>
+<li>同样的运算，位运算的效率高于算术运算</li>
+</ul>
+<h1 id="三、引用数据类型、流程控制语句-和-数组"><a href="#三、引用数据类型、流程控制语句-和-数组" class="headerlink" title="三、引用数据类型、流程控制语句 和 数组"></a>三、引用数据类型、流程控制语句 和 数组</h1><h2 id="1-引用数据类型"><a href="#1-引用数据类型" class="headerlink" title="1. 引用数据类型"></a>1. 引用数据类型</h2><ul>
+<li><p>引用数据类型的变量定义及赋值格式：数据类型 变量名 = new 数据类型();</p>
+</li>
+<li><p>调用该类型实例的功能：变量名.方法名();</p>
+</li>
+<li><p><strong>Scanner类：</strong></p>
+<ul>
+<li><strong>导包</strong>：import java.util.Scanner;</li>
+<li><strong>创建对象实例</strong>：Scanner sc = new Scanner(System.in);</li>
+<li><strong>调用方法</strong>：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int  i = sc.nextInt(); //用来接收控制台录入的数字</span><br><span class="line">String s = sc.next(); //用来接收控制台录入的字符串</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>随机数类Random</strong></p>
+</li>
+<li><p><strong>方法简介</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">public int nextInt(int maxValue)    //产生 [0,maxValue) 范围的随机整数，包含0，不包含maxValue；</span><br><span class="line">public double nextDouble()          //产生 [0,1) 范围的随机小数，包含0.0，不包含1.0。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Random使用方式:</strong></p>
+</li>
+<li><p><strong>import导包</strong>：import java.util.Random</p>
+</li>
+<li><p><strong>创建实例格式</strong>：Random 变量名 = new Random();</p>
+</li>
+<li><p><strong>赋值</strong>：a = 变量名.nextInt(maxValue);</p>
+</li>
+</ul>
+<h2 id="2-流程控制语句"><a href="#2-流程控制语句" class="headerlink" title="2. 流程控制语句"></a>2. 流程控制语句</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1. if</span><br><span class="line">2. if...else...</span><br><span class="line">3. if...else if...else...</span><br><span class="line">4. while</span><br><span class="line">5. for</span><br><span class="line">6. do...while...</span><br><span class="line">7. switch case default break</span><br><span class="line">//case 穿透性：如果多个case条件后面的执行语句是一样的，则该执行语句只需书写一次即可，这是一种简写的方式</span><br></pre></td></tr></table></figure>
+
+<p><strong>break语句</strong></p>
+<ul>
+<li><strong>作用</strong>：跳出所在的循环体</li>
+<li><strong>使用方式</strong><ul>
+<li>无法单独使用，必须将break关键字置于 switch 或 循环语句 中</li>
+</ul>
+</li>
+<li><strong>运行规律</strong><ul>
+<li>不需要判断任何条件，只要遇到break变直接跳出执行后续代码。会完全跳出选择或者循环结构</li>
+<li>只能跳出 最近的 代码块，不能跨越多级代码块</li>
+</ul>
+</li>
+<li><strong>标记</strong><ul>
+<li>当break语句出现在嵌套循环中的内层循环时，它只能跳出内层循环，如果想使用break语句跳出外层循环则需要对外层循环添加标记</li>
+<li><strong>使用方式</strong>：在外层循环外的某行前边使用，后边跟有冒号:的标识符，即定义完毕。</li>
+<li>使用时当在内层循环使用 break 或 continue 时后边紧跟之前定义的标号即可<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">itcast: for (i = 1; i &lt;= 9; i++) &#123; // 外层循环,itcast是标记</span><br><span class="line">    for (j = 1; j &lt;= i; j++) &#123; // 内层循环</span><br><span class="line">        if (i &gt; 4) &#123; // 判断i的值是否大于4</span><br><span class="line">        break itcast; // 跳出外层循环</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>continue语句</strong></p>
+<ul>
+<li><strong>作用</strong>：提前结束本次循环，继续进行下次循环</li>
+<li><strong>使用方式</strong>: 无法单独使用，必须将continue关键字置于 循环语句 中</li>
+<li><strong>运行规律</strong>: 不需要判断任何条件，只要遇到continue变直接跳出本轮循环进行下次循环</li>
+</ul>
+<p><strong>return 、break、continue 跳出控制语句的区别</strong></p>
+<ul>
+<li><strong>break</strong>：结束当前整个循环，执行当前循环下边的语句。</li>
+<li><strong>continue</strong>：结束本次循环，继续进行下次循环</li>
+<li><strong>return</strong>： 用于结束一个方法，返回给上层调用者，如果位于main方法内，相当于结束了程序。<blockquote>
+<p>return也可以用于结束循环，因为return用于结束一个方法，如果方法中有循环的话，不管return嵌套于多少层循环之内，循环都结束。<br>不会再执行循环后面的语句</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="3-数组"><a href="#3-数组" class="headerlink" title="3. 数组"></a>3. 数组</h2><p><strong>一维数组</strong></p>
+<ul>
+<li><strong>概述：长度不可变、元素类型相同</strong><ul>
+<li>一组数据的集合，数组中的每个数据被称作’元素’</li>
+<li>在数组中可以存放’任意类型’的元素</li>
+<li>但’同一个数组’里存放的元素类型必须一致。</li>
+<li>数组是’恒定, 定长的    </li>
+</ul>
+</li>
+<li><strong>数组的定义1</strong><ul>
+<li><strong>格式</strong>: <code>数据类型[] 数组名 = new 数据类型[长度]; int[] x = new int[100];</code></li>
+<li><strong>使用属性</strong>：<code>数组名.length</code></li>
+<li>数组的最小索引是 0, 最大索引是 <code>数组.length-1</code></li>
+</ul>
+</li>
+<li><strong>数组的定义2</strong><ul>
+<li><strong>数组初始化</strong>：在定义数组时只指定数组的长度，由系统自动为元素 赋初值 的方式称作动态初始化。</li>
+<li><strong>格式</strong>:</li>
+<li><code>数据类型[] 数组名 = new 类型[长度]; int[] arr = new int[4];</code></li>
+<li><code>类型[] 数组名 = new 类型[]{元素，元素，……}; int[] arr = new int[]{1,2,3,4};</code></li>
+<li><code>类型[] 数组名 = {元素，元素，元素，……}; int[] arr = { 1, 2, 3, 4 };</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>JVM内存划分</strong></p>
+<ul>
+<li><strong>寄存器</strong>：内存和CUP之间</li>
+<li><strong>本地方法栈</strong>： JVM调用了系统中的功能</li>
+<li><strong>方法和数据共享</strong>： 运行时期class文件进入的地方</li>
+<li><strong>方法栈</strong>：所有的方法运行的时候进入内存</li>
+<li><strong>堆</strong>：存储的是容器和对象</li>
+</ul>
+<p><strong>数组中常见的异常</strong></p>
+<ul>
+<li>数组的索引越界异常</li>
+<li>空指针异常</li>
+</ul>
+<p><strong>二维数组</strong></p>
+<ul>
+<li><strong>定义格式</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//第一种定义格式</span><br><span class="line">//相当于定义了一个3*4的二维数组，即二维数组的长度为3，二维数组中的每个元素又是一个长度为4的数组</span><br><span class="line">- int[][] arr = new int[3][4];//不推荐</span><br><span class="line"></span><br><span class="line">//第二种定义格式</span><br><span class="line">//第二种方式和第一种类似，只是数组中每个元素的长度不确定,必须要new：arr[0] = new int[5];...</span><br><span class="line">int[][] arr = new int[3][];</span><br><span class="line"></span><br><span class="line">//第三种定义格式</span><br><span class="line">//二维数组中定义了三个元素，这三个元素都是数组，分别为&#123;1,2&#125;、&#123;3,4,5,6&#125;、&#123;7,8,9&#125;</span><br><span class="line">int[][] arr = &#123;&#123;1,2&#125;,&#123;3,4,5,6&#125;,&#123;7,8,9&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>二维数组内存</strong></p>
+<ul>
+<li>比如：int[][] arr = new int[3][2];</li>
+<li>外层数组长在内存开辟连续的3个大的内存空间,每一个内存空间都对应的有地址值</li>
+<li>每一个大内存空间里又开辟连续的两个小的内存空间.</li>
+</ul>
+<p><strong>打印数组</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">//打印一维数组五种方法</span><br><span class="line">Arrays.toString(arr)</span><br><span class="line"></span><br><span class="line">for(int n: arr)   </span><br><span class="line">   System.out.println(n+&quot;, &quot;);  </span><br><span class="line"></span><br><span class="line">for (int i = 0; i &lt; arr.length; i++) &#123;  </span><br><span class="line">   System.out.print(arr[i] + &quot;, &quot;);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line">System.out.println(Arrays.asList(arr));  </span><br><span class="line"></span><br><span class="line">Arrays.asList(arr).stream().forEach(s -&gt; System.out.println(s));//java8  </span><br><span class="line"></span><br><span class="line">//打印二维数组三种</span><br><span class="line">for(int i=0;i&lt;arr.length;i++) &#123;  </span><br><span class="line">    for(int j=0;j&lt;arr[i].length;j++) &#123;  </span><br><span class="line">        System.out.print(arr[i][j]+&quot; &quot;);  </span><br><span class="line">    &#125;  </span><br><span class="line">    System.out.println();  //换行  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line">for(int[] a:arr) &#123;  </span><br><span class="line">    for(int b:a)&#123;  </span><br><span class="line">        System.out.print(b+&quot; &quot;);  </span><br><span class="line">    &#125;  </span><br><span class="line">    System.out.println();//换行  </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">for(int i=0;i&lt;arr.length;i++)  </span><br><span class="line">    System.out.println(Arrays.toString(arr[i]));  </span><br><span class="line"></span><br><span class="line">//打印三维数组三种</span><br><span class="line">int [][][] arrays=new int[4][3][2];//在栈空间创建一个空间  </span><br><span class="line"></span><br><span class="line">for(int i=0;i&lt;arrays.length;i++) &#123;  </span><br><span class="line">    for(int i1=0;i1&lt;arrays[i].length;i1++) &#123;  </span><br><span class="line">        for(int i2=0;i2&lt;arrays[i][i1].length;i2++) &#123;  </span><br><span class="line">        System.out.print(arrays[i][i1][i2]);  </span><br><span class="line">    &#125;  </span><br><span class="line">    System.out.println();//二维换行  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println();//三维换行  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="四、方法"><a href="#四、方法" class="headerlink" title="四、方法"></a>四、方法</h1><h2 id="1-引入"><a href="#1-引入" class="headerlink" title="1. 引入"></a>1. 引入</h2><blockquote>
+<p>为什么要有方法：提高代码的复用性<br>什么是方法：完成特定功能的代码块</p>
+</blockquote>
+<h2 id="2-语法格式"><a href="#2-语法格式" class="headerlink" title="2. 语法格式"></a>2. 语法格式</h2><ul>
+<li><strong>访问修饰符</strong>：方法允许被访问的权限范围。( public，protected，private，无修饰符 )</li>
+<li><strong>返回类型</strong>：void、任何数据类型</li>
+<li><strong>方法名</strong>：同变量名规则。小写；多个单词，第一个单词首字母小写，其余首字母大写 。myMethod</li>
+<li><strong>参数列表</strong>：可以省略。参数类型 + 参数名，…</li>
+</ul>
+<h2 id="3-方法调用"><a href="#3-方法调用" class="headerlink" title="3. 方法调用"></a>3. 方法调用</h2><ul>
+<li>可以使用<strong>对象名</strong>调用方法，静态方法是使用<strong>类名</strong>调用的</li>
+<li>方法包括在类中,调用时先创建包含方法的类的对象，然后用对象再去调用方法。<ul>
+<li><strong>创建对象</strong>：类名 对象名 = new 类名();</li>
+<li><strong>调用</strong>：对象名.方法名();</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-注意事项"><a href="#4-注意事项" class="headerlink" title="4. 注意事项"></a>4. 注意事项</h2><ul>
+<li>方法参数是*<em>基本类型 *</em>，传递的是值。（包含String类型），形式参数的改变对实际参数不影响</li>
+<li>方法参数是<strong>引用类型</strong>，传递的是内存地址值。（String类型除外），形式参数的改变对实际参数有影响</li>
+<li>方法的定义只能放在类里面，<strong>不能嵌套定义</strong>。故而不能在主方法内直接定义方法</li>
+<li>方法返回值是void，方法中可以省略return</li>
+<li>方法一般在主方法的前面定义</li>
+<li>调用方法的时候，返回值是void, 不能写在输出语句中</li>
+</ul>
+<h2 id="5-方法重载"><a href="#5-方法重载" class="headerlink" title="5. 方法重载"></a>5. 方法重载</h2><ul>
+<li><strong>方法的重载</strong>：在同一个类中，方法名相同，参数列表不同。与返回值类型无关。</li>
+<li><strong>参数列表不同</strong>：<ul>
+<li><strong>参数个数不同</strong></li>
+<li><strong>参数类型不同</strong></li>
+<li><strong>参数的顺序不同</strong>(算重载,但是在开发中不用)，注意：必须是不同数据类型。相同类型不存在顺序不同</li>
+</ul>
+</li>
+<li><strong>方法重载注意事项</strong><ul>
+<li>重载和参数变量名无关</li>
+<li>重载和返回值类型无关如void method(int x)与int method(int y)不是方法重载，不能同时存在</li>
+<li>重载和修饰符无关</li>
+<li>重载看<strong>方法名</strong>和<strong>参数列表</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="6-可变参数列表"><a href="#6-可变参数列表" class="headerlink" title="6. 可变参数列表"></a>6. 可变参数列表</h2><ul>
+<li>例：<code>public void sum(int... n){}</code></li>
+<li>参数列表中如果有两个以上的参数，可变参数一定在最后</li>
+<li>可以将数组传递给可变参数列表</li>
+<li>数组作为参数时，不能将多个值传递给数组的</li>
+<li>一个方法的形式参数列表，只能有一个可变参数列表</li>
+<li>方法名相同，一个参数是可变参数，一个参数是一维数组，这两个方法不是重载，因为<strong>一个可变参数等价于相应类型的一维数组</strong>就可以对可变参数列表，进行相应的数组操作，比如求长度</li>
+<li>可变参数列表所在的方法，是最后被执行访问的</li>
+<li>方法重载的时候，既可以定义有可变参数的同名方法，也可以定义有确定参数个数的方法，jvm调用方法时，会优先调用<strong>有确定参数个数</strong>的方法</li>
+</ul>
 
       
 
@@ -387,7 +748,7 @@ break itcast; // 跳出外层循环</code></pre> }<br>}<br>continue语句<br>作
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/04/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/04/java基础/">展开全文 >></a>
         </p>
       
 
