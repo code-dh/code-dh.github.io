@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>1.Java 基础：基础知识 | Hexo</title>
+  <title>1.Java 基础知识 | Jeff的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一、Java 概述1. Java体系 java语言 运行在各种平台上的虚拟机 class字节码文件格式 java api(jdk中提供的api)，类库 商业的或者三方优秀开源类库  2. 常用的DOS命令   DOS命令 作用    cd 退回上级目录   cd\ 退回到根目录   cd xx 进入xx目录   D: 切换盘符   cd d:\file 进入D盘的file目录   dir 列出当前">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1.Java 基础：基础知识">
+<meta property="og:title" content="1.Java 基础知识">
 <meta property="og:url" content="http://yoursite.com/2019/09/04/java基础/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Jeff的博客">
 <meta property="og:description" content="一、Java 概述1. Java体系 java语言 运行在各种平台上的虚拟机 class字节码文件格式 java api(jdk中提供的api)，类库 商业的或者三方优秀开源类库  2. 常用的DOS命令   DOS命令 作用    cd 退回上级目录   cd\ 退回到根目录   cd xx 进入xx目录   D: 切换盘符   cd d:\file 进入D盘的file目录   dir 列出当前">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-27T02:41:19.002Z">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-01-28T17:05:07.507Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1.Java 基础：基础知识">
+<meta name="twitter:title" content="1.Java 基础知识">
 <meta name="twitter:description" content="一、Java 概述1. Java体系 java语言 运行在各种平台上的虚拟机 class字节码文件格式 java api(jdk中提供的api)，类库 商业的或者三方优秀开源类库  2. 常用的DOS命令   DOS命令 作用    cd 退回上级目录   cd\ 退回到根目录   cd xx 进入xx目录   D: 切换盘符   cd d:\file 进入D盘的file目录   dir 列出当前">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Jeff的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -52,6 +52,8 @@
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Jeff</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">努力向前,不忘初心!</p>
 		
 
 		<nav class="header-menu">
@@ -111,6 +113,8 @@
 			  <h1 class="header-author js-header-author">Jeff</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>努力向前,不忘初心!<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -161,7 +165,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      1.Java 基础：基础知识
+      1.Java 基础知识
     </h1>
   
 
@@ -237,8 +241,6 @@
 <td>查看本机网络设置</td>
 </tr>
 </tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-
 <h2 id="3-JDK、JRE、Java平台"><a href="#3-JDK、JRE、Java平台" class="headerlink" title="3. JDK、JRE、Java平台"></a>3. JDK、JRE、Java平台</h2><ul>
 <li><p><strong>JDK</strong>：它是Java开发运行环境，在程序员的电脑上当然要安装JDK；</p>
 <blockquote>
@@ -256,7 +258,7 @@
 <li><strong>跨平台特性</strong><ul>
 <li>平台指的是操作系统 （Windows，Linux，Mac）。</li>
 <li>Java程序可以在任意操作系统上运行，一次编写到处运行</li>
-<li>实现跨平台需要依赖Java的虚拟机 JVM (Java Virtual Machine)为什么可以跨平台？因为JAVA程序运行依赖虚拟机，而针对不同操作系统有不同版本的虚拟机</li>
+<li>实现跨平台需要依赖Java的虚拟机 JVM (Java Virtual Machine)为什么可以跨平台？<br>因为JAVA程序运行依赖虚拟机，而针对不同操作系统有不同版本的虚拟机</li>
 <li>Java语言是跨平台的，Java虚拟机不是跨平台的</li>
 </ul>
 </li>
@@ -269,15 +271,15 @@
 </ul>
 <h2 id="4-Java代码的编写执行过程"><a href="#4-Java代码的编写执行过程" class="headerlink" title="4. Java代码的编写执行过程"></a>4. Java代码的编写执行过程</h2><ul>
 <li><strong>源文件</strong>：编写Java源文件（我们也称之为源代码文件），它的扩展名为.java；</li>
-<li><strong>编译</strong>：然后通过编译器把源文件编译成字节码文件，字节码文件扩展名为.class；<br>为什么要编译?JAVA程序是由虚拟机运行的，我们所写的代码虚拟机不认识，我们要把自己写的代码翻译成虚拟机所认识的语言</li>
+<li><strong>编译</strong>：然后通过编译器把源文件编译成字节码文件，字节码文件扩展名为.class；<br>为什么要编译? 因为JAVA程序是由虚拟机运行的，我们所写的代码虚拟机不认识，我们要把自己写的代码翻译成虚拟机所认识的语言</li>
 <li><strong>运行</strong>：最后使用解释器来运行字节码文件。</li>
 </ul>
 <h2 id="5-注释"><a href="#5-注释" class="headerlink" title="5. 注释"></a>5. 注释</h2><ul>
 <li><strong>定义</strong>：用来解释和说明程序的文字，注释是不会被执行的</li>
 <li><strong>分类</strong>：<ul>
 <li><strong>单行注释</strong>： //注释内容</li>
-<li><strong>多行注释</strong>： /<em>注释内容</em>/</li>
-<li><strong>文档注释</strong>： /<em>*注释内容</em>/</li>
+<li><strong>多行注释</strong>： /*注释内容*/</li>
+<li><strong>文档注释</strong>： /*<em>注释内容\</em>/</li>
 </ul>
 </li>
 <li><strong>注意</strong>：<ul>
@@ -371,19 +373,18 @@
 </ul>
 </li>
 <li><p>在计算机内，有符号数有3种表示法：<strong>原码、反码和补码</strong>。所有数据的运算都是采用<strong>补码</strong>进行的.</p>
-<ul>
-<li><strong>原码</strong>： +8: 0 000 1000 -8: 1 000 1000<blockquote>
+</li>
+<li><p><strong>原码</strong>： +8: 0 000 1000 -8: 1 000 1000</p>
+<blockquote>
 <p>就是二进制定点表示法，即最高位为符号位，0表示正，1表示负，其余位表示数值的大小。</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li><p>反码： +8: 0 000 1000 -8: 1111 0111</p>
+<li><p><strong>反码</strong>： +8: 0 000 1000 -8: 1111 0111</p>
 <blockquote>
 <p>正数的反码与其原码相同；负数的反码是对其原码逐位取反，但符号位除外。</p>
 </blockquote>
 </li>
-<li><p>补码： +8: 0 000 1000 -8: 1111 1000</p>
+<li><p><strong>补码</strong>： +8: 0 000 1000 -8: 1111 1000</p>
 <blockquote>
 <p>正数的补码与其原码相同；负数的补码是在其反码的末位加 1</p>
 </blockquote>
@@ -424,7 +425,7 @@
 </ul>
 <h2 id="3-数据类型转换"><a href="#3-数据类型转换" class="headerlink" title="3. 数据类型转换"></a>3. 数据类型转换</h2><ul>
 <li><strong>自动类型转换</strong>：表示范围小的数据类型转换成范围大的数据类型，这种方式称为自动类型转换</li>
-<li><em>自动类型转换格式*</em>：范围大的数据类型 变量 = 范围小的数据类型值;<blockquote>
+<li><strong>自动类型转换格式</strong>：范围大的数据类型 变量 = 范围小的数据类型值;<blockquote>
 <p>默认转换：byte、short、char —&gt; int —&gt; long —&gt; float —&gt; double<br>byte、short、char 相互之间不转换，他们参与运算首先转换为 int类型</p>
 </blockquote>
 </li>
@@ -433,13 +434,12 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="4-运算符-和-优先级"><a href="#4-运算符-和-优先级" class="headerlink" title="4. 运算符 和 优先级"></a>4. 运算符 和 优先级</h2><p><strong>算数运算符</strong></p>
-<p><strong>+ - * / % ++ –</strong></p>
+<h2 id="4-运算符-和-优先级"><a href="#4-运算符-和-优先级" class="headerlink" title="4. 运算符 和 优先级"></a>4. 运算符 和 优先级</h2><p><strong>算数运算符</strong><br><strong>+ - * / % ++ –</strong></p>
 <blockquote>
-<p>+： 正号、加、连接字符串<br>++，–运算符后置时，先使用变量a原有值参与运算操作，运算操作完成后，变量a的值自增1或者自减1；<br>++，–运算符前置时，先将变量a的值自增1或者自减1，然后使用更新后的新值参与运算操作。</p>
+<p>a++，运算符后置时，先使用变量a原有值参与运算操作，运算操作完成后，变量a的值自增1或者自减1；<br>++a，运算符前置时，先将变量a的值自增1或者自减1，然后使用更新后的新值参与运算操作。</p>
 </blockquote>
 <ul>
-<li>注意事项：<ul>
+<li><strong>注意事项</strong>：<ul>
 <li>加法运算符在连接字符串时要注意，只有直接与字符串相加才会转成字符串。</li>
 <li>除法当两边为整数时，取整数部分，舍余数。当其中一边为浮点型时，按正常规则相除。</li>
 <li>% 为整除取余符号，小数取余没有意义。结果符号与被取余符号相同。</li>
@@ -448,11 +448,10 @@
 </ul>
 </li>
 </ul>
-<p><strong>赋值运算符</strong></p>
-<p><strong>+= -= *= /= %=</strong></p>
+<p><strong>赋值运算符</strong><br><strong>+= -= *= /= %=</strong></p>
 <ul>
 <li>+=, -=, *=, /=这样的赋值运算符包含了一个 强制转换 的操作，会将左右两边运算后的结果，强制类型转换后赋值给左边</li>
-<li>注意：赋值运算符左边必须是变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int n = 10;</span><br><span class="line">byte by = 20;</span><br><span class="line">by += n; // 运算完毕后，by的值为byte类型30， 相当于代码 by = (byte)(by + n);</span><br></pre></td></tr></table></figure>
+<li>注意：赋值运算符左边必须是变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int n = 10;</span><br><span class="line">byte b = 20;</span><br><span class="line">b += n; // 运算完毕后，b的值为byte类型30， 相当于代码 b = (byte)(b + n);</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
